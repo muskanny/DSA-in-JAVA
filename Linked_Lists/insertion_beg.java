@@ -20,7 +20,7 @@ class Node{
 
 public class insertion_beg{
 
-    static Node insertBegin(Node head, int x){
+    public static Node insertBegin(Node head, int x){
         Node nx=new Node(x);  //creation of new node pointing to null
         nx.next=head; //making it point to head
         head=nx; //updating head
