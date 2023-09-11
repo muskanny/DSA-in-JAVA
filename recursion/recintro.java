@@ -30,21 +30,40 @@ public class recintro {
 
     }
 
-    public static void printn(int n){
+    public static void printno(int n){
         if(n==0){
             return;
         }
         System.out.println(n);
-        printn(n-1);
+        printno(n-1);
+
 
     }
+
+    public static void printon(int n){
+        
+        if(n==0){
+            return;
+        }
+
+        printon(n-1);
+        System.out.println(n);
+    }
+
+
+
+
+
     public static void main(String[] args) {
 
         Scanner sc=new Scanner(System.in);
         int n=sc.nextInt();
         System.out.println(fact(n));
         recworking(n);
-        printn(10);
+        System.out.println("printing one to n");
+        printon(7);
+        System.out.println("printing n to one");
+        printno(7);
 
         
     }
