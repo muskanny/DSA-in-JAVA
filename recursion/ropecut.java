@@ -14,6 +14,7 @@ public class ropecut{
         }
 
         int res= Math.max(maxcuts(n-a, a, b, c),Math.max(maxcuts(n-b, a, b, c),maxcuts(n-c, a, b, c)));
+        //int res= Math.max(maxcuts(n-a, a, b, c),maxcuts(n-b, a, b, c),maxcuts(n-c, a, b, c));
 
         if(res==-1){
             return -1;
