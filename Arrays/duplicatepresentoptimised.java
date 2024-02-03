@@ -1,3 +1,5 @@
+import java.util.*;
+import java.io.*;
 class Solution {
     public static ArrayList<Integer> duplicates(int arr[], int n) {
         // First check all the values that are
