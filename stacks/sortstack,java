@@ -1,0 +1,23 @@
+//brute force
+import java.util.* ;
+import java.io.*; 
+public class sortstack {
+	public static Stack<Integer> sortStack(Stack<Integer> s) {
+		//Write your code here
+		Stack<Integer> ans=new Stack<>();
+		int[] arr=new int[s.size()];
+		int i=0;
+		while(!s.isEmpty()){
+			arr[i]=s.pop();
+			i++;
+
+		}
+		Arrays.sort(arr);
+		for(int j=0; j<arr.length; j++){
+
+			ans.push(arr[j]);
+		}
+
+		return ans;
+	}
+}
