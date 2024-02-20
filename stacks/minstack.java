@@ -1,8 +1,12 @@
 
 //brute force method
-class Mminstack {
+import java.util.Stack;
+import java.io.*;
+import java.util.*;
+
+class minstack {
     Stack<Integer> st=new Stack<>();
-    public MinStack() {
+    public minstack() {
         
     }
     
